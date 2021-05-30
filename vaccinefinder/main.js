@@ -155,7 +155,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar fixed-bottom navbar-dark bg-dark mt-2\">\n  <div class=\"container\">\n    <a href=\"#\" class=\"navbar-brand\">Made with Love &hearts;</a>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar fixed-bottom navbar-dark bg-dark mt-2\">\n  <div class=\"container\">\n    <a href=\"/vaccinefinder/\" class=\"navbar-brand\">Made with Love &hearts;</a> <a href=\"https://www.linkedin.com/in/himanshunamdeo/\">Connect with my on LinkedIn  </a> \n  </div>\n</nav>\n"
 
 /***/ }),
 
