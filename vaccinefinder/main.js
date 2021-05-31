@@ -158,7 +158,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar fixed-bottom navbar-dark bg-dark mt-2\">\n  <div class=\"container\">\n    <a href=\"#\" class=\"navbar-brand\">Made with Love &hearts;</a>\n  </div>\n</nav>\n"
+module.exports = "<nav class=\"navbar fixed-bottom navbar-dark bg-dark mt-2\">\n  <div class=\"container\">\n    <a href=\"/vaccinefinder\" class=\"navbar-brand\">Made with Love &hearts;</a>\n    <a href=\"https://www.linkedin.com/in/himanshunamdeo/\" rel=\"noreferrer\" target=\"_blank\"  class=\"navbar-brand\">Connect with me on LinkedIn &#9889;</a>\n\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -490,7 +490,6 @@ var VaccineSlotComponent = /** @class */ (function () {
         this.paginate = { prevBtn: false, nextBtn: true };
         this.filteredAge = 'ALL';
         this.filteredVaccineType = 'ALL';
-        this.animationState = 'normal';
     }
     VaccineSlotComponent.prototype.ngOnInit = function () {
     };
@@ -549,7 +548,6 @@ var VaccineSlotComponent = /** @class */ (function () {
     };
     VaccineSlotComponent.prototype.filterResults = function () {
         var _this = this;
-        this.animationState = 'in';
         var filteredResults = this.vaccineInfoResponse;
         if (this.filteredAge === 'ALL' && this.filteredVaccineType === 'ALL') {
             filteredResults = this.vaccineInfoResponse;
