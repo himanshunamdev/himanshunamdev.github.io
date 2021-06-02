@@ -237,8 +237,8 @@ var VaccineService = /** @class */ (function () {
     };
     VaccineService.prototype.getVaccineInfoForNext7Days = function (districtId) {
         var date = new Date();
-        // let today = date.getDate() + '-' + (date.getMonth() + 1) +'-' + date.getFullYear();
-        var today = '2-6-2021';
+        let today = date.getDate() + '-' + (date.getMonth() + 1) +'-' + date.getFullYear();
+        //var today = '2-6-2021';
         return this.http.get(this.vaccineAPI + districtId + '&date=' + today);
     };
     VaccineService = __decorate([
