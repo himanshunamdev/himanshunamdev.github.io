@@ -158,7 +158,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar fixed-bottom navbar-dark bg-dark mt-2\">\r\n  <div class=\"container\">\r\n    <a href=\"/vaccinefinder\" class=\"navbar-brand\">Made with Love &hearts;</a>\r\n    <a href=\"https://www.linkedin.com/in/himanshunamdeo/\" rel=\"noreferrer\" target=\"_blank\"  class=\"navbar-brand\">Connect with me on LinkedIn &#9889;</a>\r\n\r\n  </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar fixed-bottom navbar-dark bg-dark mt-2\">\r\n  <div class=\"container\">\r\n    <a href=\"/vaccinefinder\" class=\"navbar-brand\">Made with &hearts;</a>\r\n    <a href=\"https://www.linkedin.com/in/himanshunamdeo/\" rel=\"noreferrer\" target=\"_blank\"  class=\"navbar-brand\">Connect with me on LinkedIn &#9889;</a>\r\n\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -237,8 +237,7 @@ var VaccineService = /** @class */ (function () {
     };
     VaccineService.prototype.getVaccineInfoForNext7Days = function (districtId) {
         var date = new Date();
-        let today = date.getDate() + '-' + (date.getMonth() + 1) +'-' + date.getFullYear();
-        //var today = '2-6-2021';
+        var today = date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear();
         return this.http.get(this.vaccineAPI + districtId + '&date=' + today);
     };
     VaccineService = __decorate([
@@ -434,7 +433,7 @@ var States = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".records{\r\n    right: 10%;top: 2%;position: absolute;color: red;\r\n}\r\nbutton:disabled {\r\n    cursor: not-allowed;\r\n    pointer-events: all !important;\r\n}\r\n@media\r\nonly screen\r\nand (max-width: 760px), (min-device-width: 768px)\r\nand (max-device-width: 1024px)  {\r\n\r\n    table, thead, tbody, th, td, tr {\r\n        display: block;\r\n        font-size: small;\r\n    }\r\n\r\n    /* Hide table headers (but not display: none;, for accessibility) */\r\n    thead tr {\r\n        position: absolute;\r\n        top: -9999px;\r\n        left: -9999px;\r\n    }\r\n\r\n    tr {\r\n        margin: 0 0 1rem 0;\r\n    }\r\n\r\n    tr:nth-child(odd) {\r\n        background: #ccc;\r\n    }\r\n\r\n    td {\r\n        border: none;\r\n        border-bottom: 1px solid #eee;\r\n        position: relative;\r\n        padding-left: 50%;\r\n    }\r\n\r\n    td:before {\r\n        /* Now like a table header */\r\n        position: absolute;\r\n        /* Top/left values mimic padding */\r\n        top: 7px;\r\n        left: 6px;\r\n        width: 45%;\r\n        padding-right: 10px;\r\n        white-space: nowrap;\r\n    }\r\n\r\n    td:nth-of-type(1):before { content: \"Vaccine\"; }\r\n    td:nth-of-type(2):before { content: \"Age\"; }\r\n    td:nth-of-type(3):before { content: \"Dose 1\"; }\r\n    td:nth-of-type(4):before { content: \"Dose 2\"; }\r\n    td:nth-of-type(5):before { content: \"Date\"; }\r\n    td:nth-of-type(6):before { content: \"Center Name\"; }\r\n    td:nth-of-type(7):before { content: \"Address\"; }\r\n\r\n\r\n\r\n    .records{\r\n        right: 30%;top: 28px;position: absolute;color: red;\r\n    }\r\n}\r\n"
+module.exports = ".records{\r\n    right: 10%;top: 4px;position: absolute;color: red;\r\n}\r\nbutton:disabled {\r\n    cursor: not-allowed;\r\n    pointer-events: all !important;\r\n}\r\n@media\r\nonly screen\r\nand (max-width: 760px), (min-device-width: 768px)\r\nand (max-device-width: 1024px)  {\r\n\r\n    table, thead, tbody, th, td, tr {\r\n        display: block;\r\n        font-size: small;\r\n    }\r\n\r\n    /* Hide table headers (but not display: none;, for accessibility) */\r\n    thead tr {\r\n        position: absolute;\r\n        top: -9999px;\r\n        left: -9999px;\r\n    }\r\n\r\n    tr {\r\n        margin: 0 0 1rem 0;\r\n    }\r\n\r\n    tr:nth-child(odd) {\r\n        background: #ccc;\r\n    }\r\n\r\n    td {\r\n        border: none;\r\n        border-bottom: 1px solid #eee;\r\n        position: relative;\r\n        padding-left: 50%;\r\n    }\r\n\r\n    td:before {\r\n        /* Now like a table header */\r\n        position: absolute;\r\n        /* Top/left values mimic padding */\r\n        top: 7px;\r\n        left: 6px;\r\n        width: 45%;\r\n        padding-right: 10px;\r\n        white-space: nowrap;\r\n    }\r\n\r\n    td:nth-of-type(1):before { content: \"Vaccine\"; }\r\n    td:nth-of-type(2):before { content: \"Age\"; }\r\n    td:nth-of-type(3):before { content: \"Dose 1\"; }\r\n    td:nth-of-type(4):before { content: \"Dose 2\"; }\r\n    td:nth-of-type(5):before { content: \"Date\"; }\r\n    td:nth-of-type(6):before { content: \"Center Name\"; }\r\n    td:nth-of-type(7):before { content: \"Address\"; }\r\n\r\n\r\n\r\n    .records{\r\n        right: 30%;top: 28px;position: absolute;color: red;\r\n    }\r\n}\r\n.tableScroll{\r\nheight: 58vh;overflow-y: scroll\r\n}\r\n"
 
 /***/ }),
 
@@ -445,7 +444,7 @@ module.exports = ".records{\r\n    right: 10%;top: 2%;position: absolute;color: 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container card\">\r\n    <div class=\"row container position-sticky\">\r\n        <div class=\"col-12 col-md-6 d-sm-inline-block p-2\" >\r\n            <select class=\"form-select\" [(ngModel)]=\"selectedstate\" (ngModelChange)=\"fetchDistricts()\">\r\n                <option *ngFor=\"let state of states\" [value]=\"state.state_id\">{{state.state_name}}</option>\r\n            </select>\r\n        </div>\r\n        <div class=\"col-12 col-md-6 d-md-inline-block p-2\" >\r\n            <select class=\"form-select\" [(ngModel)]=\"selecteddistrict\" [disabled]=\"selectedstate===0\"\r\n                    (ngModelChange)=\"getVaccineInfo()\">\r\n                <option *ngFor=\"let district of districts\"\r\n                        [value]=\"district.district_id\">{{district.district_name}}</option>\r\n            </select>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"container card my-2\">\r\n    <div class=\"row\">\r\n        <div class=\" col-10 col-md-4 d-lg-inline-block p-2\">\r\n            <div class=\"row\">\r\n                <label class=\"col-4 col-md-6 d-grid align-self-center justify-content-center\">Age : </label>\r\n                <select class=\"col form-select\" [(ngModel)]=\"filteredAge\" [disabled]=\"selecteddistrict===0\">\r\n                    <option value=\"ALL\">ALL</option>\r\n                    <option value=\"18\">18+</option>\r\n                    <option value=\"45\">45+</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-10  col-md-4 d-lg-inline-block p-2\">\r\n            <div class=\"row\">\r\n                <label class=\"col-4 col-md-6 d-grid align-self-center justify-content-center\"> Vaccine : </label>\r\n                <select class=\"col  form-select\" [(ngModel)]=\"filteredVaccineType\" [disabled]=\"selecteddistrict===0\">\r\n                    <option value=\"ALL\">BOTH</option>\r\n                    <option value=\"COVISHIELD\">COVISHIELD</option>\r\n                    <option value=\"COVAXIN\">COVAXIN</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-4 justify-content-center d-grid p-2\">\r\n            <button class=\"btn btn-success btn-block\" style=\"width: 200%\" (click)=\"filterResults()\"\r\n                    [disabled]=\"selecteddistrict===0\">Filter\r\n            </button>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<div class=\"container card mt-2 mb-4\" style=\"\">\r\n    <div class=\"clearfix\">\r\n\r\n        <h4 class=\"d-grid justify-content-center mt-2 w-auto\"  >Vaccine Info\r\n        </h4>\r\n        <span *ngIf=\"filteredValues\" [@vaccineinfo]\r\n     class=\"records\" ><span *ngIf=\"filteredValues.length>0\"> Records found : {{filteredValues.length}}</span> </span>\r\n    </div>\r\n    <div class=\"mt-2 \" >\r\n        <table role=\"table\" class=\"table table-striped table-sm table-hover\" style=\"width: 100%\">\r\n            <thead role=\"rowgroup\">\r\n            <tr role=\"row\"class=\"row text-center\">\r\n                <th role=\"columnheader\" class=\"col-md-2\">Vaccine</th>\r\n                <th role=\"columnheader\" class=\"col-md-1\">Age</th>\r\n                <th role=\"columnheader\"  class=\"col-md-1\">Dose 1</th>\r\n                <th role=\"columnheader\"  class=\"col-md-1\">Dose 2</th>\r\n                <th role=\"columnheader\"  class=\"col-md-2\">Date</th>\r\n                <th role=\"columnheader\" class=\"col-md\">Center Name</th>\r\n                <th role=\"columnheader\"  class=\"col-md\">Address</th>\r\n            </tr>\r\n            </thead>\r\n            <tbody *ngIf=\"vaccineInfo\" [@vaccineinfo] role=\"rowgroup\" >\r\n            <tr role=\"row\" class=\"row text-center\" *ngFor=\"let vaccine of vaccineInfo\" >\r\n            <td  role=\"cell\"  class=\"col-md-2\">{{vaccine.sessions[0].vaccine}}</td>\r\n            <td  role=\"cell\"  class=\"col-md-1\">{{vaccine.sessions[0].min_age_limit}}</td>\r\n            <td  role=\"cell\"  class=\"col-md-1\">{{vaccine.sessions[0].available_capacity_dose1}}</td>\r\n            <td  role=\"cell\"  class=\"col-md-1\">{{vaccine.sessions[0].available_capacity_dose2}}</td>\r\n            <td  role=\"cell\"  class=\"col-md-2\">{{vaccine.sessions[0].date}}</td>\r\n            <td  role=\"cell\"  class=\"col-md\">{{vaccine.name}}</td>\r\n            <td  role=\"cell\" class=\"col-md\">{{vaccine.address}}</td>\r\n            </tr>\r\n\r\n            </tbody>\r\n            <tbody *ngIf=\"loading\">\r\n            <div class=\"d-flex justify-content-center m-4\">\r\n                <div class=\"spinner-border\" role=\"status\">\r\n                </div>\r\n            </div>\r\n            </tbody>\r\n            <tbody *ngIf=\"filteredValues\">\r\n            <div *ngIf=\"filteredValues.length===0\" class=\"text-center\">\r\n                <div >\r\n                    <img src=\"vaccinefinder/assets/notfound.gif\" alt=\"Not Found\" style=\"width: 25%;\"/>\r\n                    <h4 class=\"p-3\" style=\"font-family: 'Comic Sans MS',serif;\"> No Vaccine Slot Available!!.. Keep Trying..</h4>\r\n                </div>\r\n            </div>\r\n            </tbody>\r\n        </table>\r\n\r\n        <div *ngIf=\"filteredValues\">\r\n            <div *ngIf=\"filteredValues.length>10\" class=\"btn-group mb-4\" role=\"group\" style=\"margin-left: 42%\">\r\n                <button type=\"button\" class=\"btn btn-outline-info\" (click)=\"prevTen()\" [disabled]=\"paginate.prevBtn\">\r\n                    Prev\r\n                </button>\r\n                <button type=\"button\" class=\"btn  btn-outline-info\" (click)=\"nextTen()\" [disabled]=\"paginate.nextBtn\">\r\n                    Next\r\n                </button>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n</div>\r\n<div style=\"height: 50px\"></div>\r\n"
+module.exports = "<div class=\"container card\">\r\n    <div class=\"row container position-sticky\">\r\n        <div class=\"col-12 col-md-6 d-sm-inline-block p-2\" >\r\n            <select class=\"form-select\" [(ngModel)]=\"selectedstate\" (ngModelChange)=\"fetchDistricts()\">\r\n                <option *ngFor=\"let state of states\" [value]=\"state.state_id\">{{state.state_name}}</option>\r\n            </select>\r\n        </div>\r\n        <div class=\"col-12 col-md-6 d-md-inline-block p-2\" >\r\n            <select class=\"form-select\" [(ngModel)]=\"selecteddistrict\" [disabled]=\"selectedstate===0\"\r\n                    (ngModelChange)=\"getVaccineInfo()\">\r\n                <option *ngFor=\"let district of districts\"\r\n                        [value]=\"district.district_id\">{{district.district_name}}</option>\r\n            </select>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"container card my-2\">\r\n    <div class=\"row\">\r\n        <div class=\" col-10 col-md-3 d-lg-inline-block p-2\">\r\n            <div class=\"row\">\r\n                <label class=\"col-4 col-md-6 d-grid align-self-center justify-content-center\">Age : </label>\r\n                <select class=\"col form-select\" [(ngModel)]=\"filteredAge\" [disabled]=\"selecteddistrict===0\">\r\n                    <option value=\"ALL\">ALL</option>\r\n                    <option value=\"18\">18+</option>\r\n                    <option value=\"45\">45+</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-10  col-md-3 d-lg-inline-block p-2\">\r\n            <div class=\"row\">\r\n                <label class=\"col-4 col-md-6 d-grid align-self-center justify-content-center\"> Vaccine : </label>\r\n                <select class=\"col  form-select\" [(ngModel)]=\"filteredVaccineType\" [disabled]=\"selecteddistrict===0\">\r\n                    <option value=\"ALL\">BOTH</option>\r\n                    <option value=\"COVISHIELD\">COVISHIELD</option>\r\n                    <option value=\"COVAXIN\">COVAXIN</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\" col-10 col-md-3 d-lg-inline-block p-2\">\r\n            <div class=\"row\">\r\n                <label class=\"col-4 col-md-6 d-grid align-self-center justify-content-center\">Dose : </label>\r\n                <select class=\"col form-select\" [(ngModel)]=\"filteredDose\" [disabled]=\"selecteddistrict===0\">\r\n                    <option value=\"ALL\">ALL</option>\r\n                    <option value=\"1\">Dose 1</option>\r\n                    <option value=\"2\">Dose 2</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-md-3 justify-content-center d-grid p-2\">\r\n            <button class=\"btn btn-success btn-block\" style=\"width: 200%\" (click)=\"filterResults()\"\r\n                    [disabled]=\"selecteddistrict===0\">Filter\r\n            </button>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n\r\n<div class=\"container card mt-2 mb-4\" style=\"\">\r\n    <div class=\"clearfix\">\r\n\r\n        <h5 class=\"d-grid justify-content-center mt-2 w-auto\"  >Vaccine Info\r\n        </h5>\r\n        <span *ngIf=\"filteredValues\" [@vaccineinfo]\r\n     class=\"records\" ><span *ngIf=\"filteredValues.length>0\"> Records found : {{filteredValues.length}}</span> </span>\r\n    </div>\r\n    <div class=\"mt-2 \" [ngClass]=\"{'tableScroll': (filteredValues&&filteredValues.length>10)}\" >\r\n        <table role=\"table\" class=\"table table-striped table-sm \" style=\"width: 99%;\">\r\n            <thead role=\"rowgroup\">\r\n            <tr role=\"row\"class=\"row text-center\">\r\n                <th role=\"columnheader\" class=\"col-md-2\">Vaccine</th>\r\n                <th role=\"columnheader\" class=\"col-md-1\">Age </th>\r\n                <th role=\"columnheader\"  class=\"col-md-1\" (click)=\"sortDose(1)\">Dose 1</th>\r\n                <th role=\"columnheader\"  class=\"col-md-1\" (click)=\"sortDose(2)\">Dose 2</th>\r\n                <th role=\"columnheader\"  class=\"col-md-2\">Date</th>\r\n                <th role=\"columnheader\" class=\"col-md\">Center Name</th>\r\n                <th role=\"columnheader\"  class=\"col-md\">Address</th>\r\n            </tr>\r\n            </thead>\r\n            <tbody *ngIf=\"vaccineInfo\" [@vaccineinfo] role=\"rowgroup\" style=\"font-size: small\">\r\n            <tr role=\"row\" class=\"row text-center\" *ngFor=\"let vaccine of vaccineInfo\" >\r\n            <td  role=\"cell\"  class=\"col-md-2\">{{vaccine.sessions[0].vaccine}}</td>\r\n            <td  role=\"cell\"  class=\"col-md-1\">{{vaccine.sessions[0].min_age_limit}}+</td>\r\n            <td  role=\"cell\"  class=\"col-md-1\">{{vaccine.sessions[0].available_capacity_dose1}}</td>\r\n            <td  role=\"cell\"  class=\"col-md-1\">{{vaccine.sessions[0].available_capacity_dose2}}</td>\r\n            <td  role=\"cell\"  class=\"col-md-2\">{{vaccine.sessions[0].date}}</td>\r\n            <td  role=\"cell\"  class=\"col-md\">{{vaccine.name}}</td>\r\n            <td  role=\"cell\" class=\"col-md\">{{vaccine.address}}</td>\r\n            </tr>\r\n\r\n            </tbody>\r\n            <tbody *ngIf=\"loading\">\r\n            <div class=\"d-flex justify-content-center m-4\">\r\n                <div class=\"spinner-border\" role=\"status\">\r\n                </div>\r\n            </div>\r\n            </tbody>\r\n            <tbody *ngIf=\"filteredValues\">\r\n            <div *ngIf=\"filteredValues.length===0\" class=\"text-center\">\r\n                <div >\r\n                    <img src=\"vaccinefinder/assets/notfound.gif\" alt=\"Not Found\" style=\"width: 25%;\"/>\r\n                    <h4 class=\"p-3\" style=\"font-family: 'Comic Sans MS',serif;\"> No Vaccine Slot Available!!.. Keep Trying..</h4>\r\n                </div>\r\n            </div>\r\n            </tbody>\r\n        </table>\r\n\r\n       <!-- <div *ngIf=\"filteredValues\">\r\n            <div *ngIf=\"filteredValues.length>10\" class=\"btn-group mb-4\" role=\"group\" style=\"margin-left: 42%\">\r\n                <button type=\"button\" class=\"btn btn-outline-info\" (click)=\"prevTen()\" [disabled]=\"paginate.prevBtn\">\r\n                    Prev\r\n                </button>\r\n                <button type=\"button\" class=\"btn  btn-outline-info\" (click)=\"nextTen()\" [disabled]=\"paginate.nextBtn\">\r\n                    Next\r\n                </button>\r\n            </div>\r\n        </div>-->\r\n\r\n    </div>\r\n\r\n</div>\r\n<div style=\"height: 50px\"></div>\r\n"
 
 /***/ }),
 
@@ -491,6 +490,11 @@ var VaccineSlotComponent = /** @class */ (function () {
         this.paginate = { prevBtn: false, nextBtn: true };
         this.filteredAge = 'ALL';
         this.filteredVaccineType = 'ALL';
+        this.filteredDose = 'ALL';
+        this.tableScrollVisible = false;
+        this.sortOrderDose1 = 2;
+        this.sortOrderDose2 = 2;
+        this.sortOrderAge = 2;
     }
     VaccineSlotComponent.prototype.ngOnInit = function () {
     };
@@ -523,16 +527,26 @@ var VaccineSlotComponent = /** @class */ (function () {
                     var center = _a[_i];
                     for (var i = 0; i < center.sessions.length; i++) {
                         var tempSession = center.sessions;
-                        _this.vaccineInfoResponse.push({ "center_id": center.center_id,
-                            "name": center.name, "address": center.address,
-                            "state_name": center.address, "district_name": center.district_name, block_name: "", pincode: 0,
-                            "fee_type": center.fee_type, "sessions": [tempSession[i]] });
+                        _this.vaccineInfoResponse.push({
+                            "center_id": center.center_id,
+                            "name": center.name,
+                            "address": center.address,
+                            "state_name": center.address,
+                            "district_name": center.district_name,
+                            block_name: "",
+                            pincode: 0,
+                            "fee_type": center.fee_type,
+                            "sessions": [tempSession[i]]
+                        });
                     }
                 }
                 _this.vaccineInfoResponse = _this.vaccineInfoResponse.filter(function (item) { return item.sessions[0].available_capacity > 0; });
-                _this.vaccineInfoResponse.sort(function (a, b) { return Date.parse(a.sessions[0].date) - Date.parse(b.sessions[0].date); });
+                _this.vaccineInfoResponse.sort(function (a, b) {
+                    return Date.parse(a.sessions[0].date) - Date.parse(b.sessions[0].date);
+                });
                 _this.filteredValues = _this.vaccineInfoResponse;
-                _this.vaccineInfo = _this.filteredValues.slice(0, 10);
+                // this.vaccineInfo = this.filteredValues.slice(0, 10);
+                _this.vaccineInfo = _this.filteredValues;
                 _this.initializeResults(_this.filteredValues);
             });
         }
@@ -563,7 +577,7 @@ var VaccineSlotComponent = /** @class */ (function () {
         var _this = this;
         this.loading = true;
         var filteredResults = this.vaccineInfoResponse;
-        if (this.filteredAge === 'ALL' && this.filteredVaccineType === 'ALL') {
+        if (this.filteredAge === 'ALL' && this.filteredVaccineType === 'ALL' && this.filteredDose === 'ALL') {
             filteredResults = this.vaccineInfoResponse;
         }
         if (this.filteredAge !== 'ALL') {
@@ -572,8 +586,17 @@ var VaccineSlotComponent = /** @class */ (function () {
         if (this.filteredVaccineType !== 'ALL') {
             filteredResults = filteredResults.filter(function (item) { return item.sessions[0].vaccine === _this.filteredVaccineType; });
         }
+        if (this.filteredDose !== 'ALL') {
+            if (this.filteredDose === '1') {
+                filteredResults = filteredResults.filter(function (item) { return item.sessions[0].available_capacity_dose1 > 0; });
+            }
+            if (this.filteredDose === '2') {
+                filteredResults = filteredResults.filter(function (item) { return item.sessions[0].available_capacity_dose2 > 0; });
+            }
+        }
         this.filteredValues = filteredResults;
-        this.vaccineInfo = this.filteredValues.slice(0, 10);
+        // this.vaccineInfo = this.filteredValues.slice(0, 10);
+        this.vaccineInfo = this.filteredValues;
         this.initializeResults(filteredResults);
     };
     VaccineSlotComponent.prototype.initializeResults = function (results) {
@@ -587,6 +610,31 @@ var VaccineSlotComponent = /** @class */ (function () {
             this.paginate.nextBtn = false;
         }
         this.loading = false;
+    };
+    VaccineSlotComponent.prototype.sortDose = function (dose) {
+        var _this = this;
+        if (this.filteredValues && dose === 1) {
+            this.filteredValues.sort(function (a, b) {
+                if (_this.sortOrderDose1 % 2 === 0) {
+                    return b.sessions[0].available_capacity_dose1 - a.sessions[0].available_capacity_dose1;
+                }
+                if (_this.sortOrderDose1 % 2 !== 0) {
+                    return a.sessions[0].available_capacity_dose1 - b.sessions[0].available_capacity_dose1;
+                }
+            });
+            this.sortOrderDose1++;
+        }
+        if (this.filteredValues && dose === 2) {
+            this.filteredValues.sort(function (a, b) {
+                if (_this.sortOrderDose2 % 2 === 0) {
+                    return b.sessions[0].available_capacity_dose2 - a.sessions[0].available_capacity_dose2;
+                }
+                if (_this.sortOrderDose2 % 2 !== 0) {
+                    return a.sessions[0].available_capacity_dose2 - b.sessions[0].available_capacity_dose2;
+                }
+            });
+            this.sortOrderDose2++;
+        }
     };
     VaccineSlotComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
