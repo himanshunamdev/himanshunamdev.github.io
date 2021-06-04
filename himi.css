@@ -68,3 +68,11 @@ h1 {
     font-size: large;
   }
 }
+
+@media (min-device-width:801px) and (max-device-width:1024px){
+
+  .content{
+    width: 94%;
+    font-size: x-large;
+  }
+}
