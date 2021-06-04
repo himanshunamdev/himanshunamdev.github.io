@@ -52,3 +52,19 @@ h1 {
     transform:translateX(25%);
   }
 }
+
+@media (max-width:481px){
+
+  .content{
+    width: 94%;
+    font-size: small;
+  }
+}
+
+@media (min-device-width:766px) and (max-device-width:800px){
+
+  .content{
+    width: 94%;
+    font-size: large;
+  }
+}
