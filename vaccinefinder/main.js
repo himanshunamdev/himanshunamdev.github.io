@@ -500,6 +500,7 @@ var VaccineSlotComponent = /** @class */ (function () {
     };
     VaccineSlotComponent.prototype.fetchDistricts = function () {
         var _this = this;
+        this.initializeFilters();
         this.districts = [this.mockDistrict];
         if (this.selectedstate > 0) {
             this.vaccineService.getDistrict(this.selectedstate).subscribe(function (result) {
@@ -520,6 +521,7 @@ var VaccineSlotComponent = /** @class */ (function () {
     VaccineSlotComponent.prototype.getVaccineInfo = function () {
         var _this = this;
         this.loading = true;
+        this.initializeFilters();
         this.vaccineInfoResponse = [];
         if (this.selecteddistrict > 0) {
             this.vaccineService.getVaccineInfoForNext7Days(this.selecteddistrict).subscribe(function (result) {
@@ -635,6 +637,11 @@ var VaccineSlotComponent = /** @class */ (function () {
             });
             this.sortOrderDose2++;
         }
+    };
+    VaccineSlotComponent.prototype.initializeFilters = function () {
+        this.filteredAge = 'ALL';
+        this.filteredVaccineType = 'ALL';
+        this.filteredDose = 'ALL';
     };
     VaccineSlotComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
