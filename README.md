@@ -7,4 +7,5 @@
   <ul>
   <li><a href="https://himanshunamdev.github.io/vaccinefinder/">Vaccine Finder - Search Vaccines by State and District of India</a></li>
    <li><a href="https://codepen.io/himanshun/full/RwVbJGr">CodePen - Responsive Table</a></li>
+   <li><a href="https://codepen.io/himanshun/pen/zYwOyGz">CodePen - Animated Form Labels</a></li>
   </ul>
